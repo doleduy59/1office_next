@@ -1,0 +1,26 @@
+<?php
+
+function theme_setup()
+{
+    register_nav_menus(array(
+        'navbar_desktop' => esc_html__('Menu Header'),
+        'footer_desktop'  => esc_html__('Menu Footer'),
+    ));
+
+    add_theme_support('html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+    ));
+}
+add_action('after_setup_theme', 'theme_setup');
+
+function theme_scripts()
+{
+    $css_version = filemtime(get_stylesheet_directory() . '/style.css');
+    wp_enqueue_style('theme-main-style', get_stylesheet_uri(), array(), $css_version);
+
+}
+add_action('wp_enqueue_scripts', 'theme_scripts');
