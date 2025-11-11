@@ -21,6 +21,6 @@ function theme_scripts()
 {
     $css_version = filemtime(get_stylesheet_directory() . '/style.css');
     wp_enqueue_style('theme-main-style', get_stylesheet_uri(), array(), $css_version);
-
+    wp_enqueue_style('inter-tight-font', 'https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap', false);
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');

@@ -1,0 +1,10 @@
+<footer>
+
+</footer>
+<script>
+
+</script>
+<?php wp_footer() ?>
+</body>
+
+</html>
