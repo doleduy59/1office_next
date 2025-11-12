@@ -2,7 +2,6 @@ header {
     width: 100%;
     height: 4.25rem;
     box-sizing: border-box;
-    padding: 0 10% 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,9 +15,11 @@ header {
 header .start {
     display: flex;
     justify-content: start;
-    width: calc(100vw/1600*179);
-    min-width: 179px;
-    height: max-content;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-width: 11.25rem;
+
 }
 
 header .start img {
@@ -29,27 +30,37 @@ header .end {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100vw/1600*179);
-    min-width: 179px;
-
-}
-
-header .center {
-    display: flex;
-    justify-content: start;
-    width: max-content;
+    width: 100%;
+    height: 100%;
+    min-width: 11.25rem;
 }
 
 header .end #search_btn {
     height: 1.125rem;
-    width: 1.125rem;
+    position: relative;
+}
+
+header .end #search_btn img {
+    height: 100%;
+    position: absolute;
+    top: 0;
 }
 
 header .end #language_btn {
     display: flex;
-    flex-direction: row;
     gap: 0.5rem;
+    height: 1.125rem;
+    align-items: center;
+}
+
+header .end #language_btn {
     font-size: 0.8125rem;
+}
+
+header .end #language_btn p {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
 }
 
 header .end #register_btn {
@@ -68,13 +79,93 @@ header .end #register_btn:hover {
     color: #ffffff;
     background-color: #F0500A;
     pointer-events: auto;
-
 }
 
-header .center .nav-menu {
+
+
+
+header .main-nav {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav-menu {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 2.5rem;
     width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header .menu-item a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+header .menu-item a:hover {
+    color: rgb(28, 80, 177);
+}
+
+
+
+
+header .menu-item .sub-menu {
+    margin: 0;
+    padding: 0;
+
+}
+
+header .menu-item .sub-menu li {
+    margin: 0;
+    padding: 0;
+    height: 4.0625rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 0.5rem;
+}
+
+header .menu-item .sub-menu li a {
+    font-size: 1rem;
+}
+
+header .menu-item .sub-menu li .menu-item-desc {
+    font-size: 0.75rem;
+}
+
+.banggia ul {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    background-color: #ffffff;
+    bottom: calc(10);
+    left: 0.5rem;
+    z-index: 3;
+    transform: translate(0, 62.3%);
+    width: 16.5rem;
+    height: 21.5625rem;
+    padding: 1rem;
 }
