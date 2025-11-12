@@ -107,13 +107,12 @@ header .nav-menu {
 }
 
 header .menu-item {
+    height: 4.25rem;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
 }
 
 header .menu-item a {
@@ -125,9 +124,6 @@ header .menu-item a {
 header .menu-item a:hover {
     color: rgb(28, 80, 177);
 }
-
-
-
 
 header .menu-item .sub-menu {
     margin: 0;
@@ -156,16 +152,24 @@ header .menu-item .sub-menu li .menu-item-desc {
     font-size: 0.75rem;
 }
 
+.banggia {
+    position: relative;
+}
+
 .banggia ul {
+    position: absolute;
     opacity: 0;
     pointer-events: none;
-    position: absolute;
     background-color: #ffffff;
-    bottom: calc(10);
-    left: 0.5rem;
+    top: 100%;
     z-index: 3;
-    transform: translate(0, 62.3%);
     width: 16.5rem;
     height: 21.5625rem;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.banggia ul li {
+    box-sizing: border-box;
     padding: 1rem;
 }

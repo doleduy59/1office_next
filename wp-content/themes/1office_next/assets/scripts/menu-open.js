@@ -1,4 +1,5 @@
 (function ($) {
+
     $(document).ready(function () {
         $(".banggia").click(function () {
             $(".banggia ul").css({
@@ -7,5 +8,11 @@
             })
         })
     });
+
+
+
+
+
+
 })(jQuery);
 

@@ -19,17 +19,25 @@
                     </div>
                 </div>
                 <div class="col-xl-8">
-
                     <?php
-                        wp_nav_menu(array(
-                            'theme_location' => 'navbar_desktop',
-                            'container' => 'nav',
-                            'container_class' => 'main-nav',
-                            'menu_class' => 'nav-menu',
-                            'walker' => new My_Description_Walker(),
-                            'fallback_cb' => false,
-                        ));
+                    /*
+                    wp_nav_menu(array(
+                        'theme_location' => 'navbar_desktop',
+                        'container' => 'nav',
+                        'container_class' => 'main-nav',
+                        'menu_class' => 'nav-menu',
+                        'walker' => new My_Description_Walker(),
+                        'fallback_cb' => false,
+                    ));*/
+                    wp_nav_menu(array(
+                        'theme_location' => 'navbar_desktop',
+                        'container'      => 'nav',
+                        'container_class' => 'main-nav',
+                        'menu_class'     => 'nav-menu',
+                        'walker'         => new Custom_Nav_Walker(),
+                    ));
                     ?>
+
 
                 </div>
                 <div class="col-xl-2 d-flex justify-content-end">
