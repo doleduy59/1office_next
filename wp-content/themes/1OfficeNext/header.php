@@ -10,11 +10,19 @@
 
 <body>
     <header>
-
         <div class="start">
             <img src=<?php echo get_template_directory_uri() . "/assets/images/Logo1office.svg" ?> alt="">
         </div>
         <div class="center">
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'navbar_desktop',
+                'container' => 'nav',
+                'container_class' => 'main-nav',
+                'menu_class' => 'nav-menu',
+                'fallback_cb' => false,
+            ));
+            ?>
 
         </div>
         <div class="end">

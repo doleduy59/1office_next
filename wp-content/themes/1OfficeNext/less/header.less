@@ -17,6 +17,7 @@ header .start {
     display: flex;
     justify-content: start;
     width: calc(100vw/1600*179);
+    min-width: 179px;
     height: max-content;
 }
 
@@ -29,12 +30,14 @@ header .end {
     align-items: center;
     justify-content: space-between;
     width: calc(100vw/1600*179);
+    min-width: 179px;
+
 }
 
 header .center {
     display: flex;
     justify-content: start;
-    width: auto;
+    width: max-content;
 }
 
 header .end #search_btn {
@@ -66,4 +69,12 @@ header .end #register_btn:hover {
     background-color: #F0500A;
     pointer-events: auto;
 
+}
+
+header .center .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    width: auto;
 }
