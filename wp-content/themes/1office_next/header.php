@@ -58,5 +58,5 @@
             </div>
         </div>
 
-        <?php get_template_part('template_parts/mega_menu') ?>
+        </div>
     </header>
