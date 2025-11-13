@@ -16,6 +16,8 @@ $menu_description = isset($menu_description) ? $menu_description : '';
     </p>
     <?php endif; ?>
 
+
+
     <img class="chevron_right" src="<?php  echo get_template_directory_uri()?> '/assets/images/Chevron_blue_right.svg'"
         alt="">
 </a>

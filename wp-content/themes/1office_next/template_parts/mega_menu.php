@@ -319,6 +319,7 @@
                                 <img src="<?php echo get_template_directory_uri() . '/assets/images/headermenu/khachhang_hover.svg' ?>"
                                     alt="icon">
                             </div>
+
                             <h2>Khách hàng</h2>
                             <p>Lưu trữ, chăm sóc, cơ hội khách hàng</p>
                         </a>
@@ -381,6 +382,8 @@
                         Truy cập 1Work
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/Chevron_right.svg"
                             alt="icon">
+
+
                         <img class="hover"
                             src="<?php echo get_template_directory_uri() ?>/assets/images/Chevron_blue_right.svg"
                             alt="icon">

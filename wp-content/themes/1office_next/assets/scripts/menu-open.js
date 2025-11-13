@@ -141,6 +141,8 @@
                 $(".truycap").attr('href', '#')
                 $(".truycap").html('Truy cập 1CRM')
             }
+
+
         })
     });
 })(jQuery);

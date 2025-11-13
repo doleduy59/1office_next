@@ -34,23 +34,15 @@ add_action('wp_enqueue_scripts', function () {
 
 
 
-
-
-
-
-
-
+//code tham khảo
 class Custom_Nav_Walker extends Walker_Nav_Menu
 {
-    // ... các method khác ...
-
     /**
      * Start the element output.
      *
      * @see Walker_Nav_Menu::start_el()
      */
     // Trong functions.php, bên trong class Custom_Nav_Walker
-
     public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
     {
         $indent = ($depth) ? str_repeat("\t", $depth) : '';
